@@ -3,9 +3,11 @@ function x() {
     function y() {
         console.log(a);
     }
+    console.log(a)
     return y;
 }
 
 var z = x();
 console.log(z);
 z();
+x();
