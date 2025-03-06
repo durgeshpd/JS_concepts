@@ -2,10 +2,10 @@
 // Purpose: Simulates a sequence of asynchronous API calls.
 const cart = ["shoes", "pant", "kurta"];
 
-api.createOrder(cart, function () {
-    api.proceedToPayment(function () {
-        api.showOrderSummary(function () {
-            api.updateWallet();
+createOrder(cart, function (orderId) {
+    proceedToPayment(orderId, function (paymentInfo) {
+        showOrderSummary(paymentInfo, function () {
+            updateWallet();
         });
     });
 });
