@@ -6,6 +6,7 @@ This repository contains my learning notes and practice code for JavaScript conc
 - Hoisting
 - Callbacks
 - Promises
+- Promise Methods: `Promise.all()`, `Promise.allSettled()`, `Promise.race()`, `Promise.any()`
 - Async/Await
 - .then() and .catch()
 - Map, Filter, and Reduce
