@@ -59,7 +59,7 @@ const p1 = new Promise((resolve, reject) => {
     }, 20000);
 });
 
-const p2 = new Promise((resolve, reject) => {
+const p3 = new Promise((resolve, reject) => {
     setTimeout(() => {
         resolve("Promise 2 Resolved Value!!");
     }, 10000);
@@ -71,7 +71,7 @@ async function handlePromiseWithDifferentDelays() {
     console.log("Hey");
     console.log(val);  // Logs the value from p1
 
-    const val2 = await p2;  // Waits for p2 (10 seconds)
+    const val2 = await p3;  // Waits for p2 (10 seconds)
     console.log("Hey there");
     console.log(val2);  // Logs the value from p2
 }
